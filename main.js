@@ -1,5 +1,11 @@
 // Create instances of your classes here
 
+const manager = new APIManager ()
+
+manager.generateNewPage()
+
+
+
 
 
 

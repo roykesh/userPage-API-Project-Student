@@ -35,22 +35,39 @@
     <!-- ---------------------------------------------------------------------- -->
     <script id="user-template" type="text/x-handlebars-template">
         <!-- Write Main User Handlebars template here -->
+        <img src="{{picture.large}}" id="profile-pic">
+        <div class="user-info">{{toUpper name.first}} {{toUpper name.last}}</div>
+        <div class="user-info">{{toUpper location.city}}, {{toUpper location.state}}</div>
+
     </script>
     <!-- ------------------------------------------------------------------------->
     <script id="user-friends-template" type="text/x-handlebars-template">
         <!-- Write Friend List Handlebars template here  -->
+        <h4>Friends</h4>
+        <br>
+        <ul>
+            {{#each users}}
+            <li>{{toUpper this.name.first}} {{toUpper this.name.last}}</li>
+            <br>
+            {{/each}}
+        </ul>
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="quote-template" type="text/x-handlebars-template">
         <!-- Write Quote Handlebars template here -->
+        <div>{{quote}}</div>
+        <div>- {{author}}</div>
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="pokemon-template" type="text/x-handlebars-template">
         <!-- Write Pokemon Handlebars template here -->
+        <img src={{img}} id="pokemon-image">
+        <div id="pokemon-text">Favourite Pokemon - {{toUpper name}}</div>
     </script>
     <!-- ---------------------------------------------------------------------- -->
     <script id="meat-template" type="text/x-handlebars-template">
         <!-- Write Meat Handlebars template here -->
+        <p class="meat-text">{{meatText}}</p>
     </script>
     <!-- ---------------------------------------------------------------------- -->
 

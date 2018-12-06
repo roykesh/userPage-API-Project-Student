@@ -20,13 +20,13 @@ body{
     grid-row: 1;
     grid-column: 1;
     font-size: 25px;
-    background-color: #3498db;
+    background-color: #41003C;
     padding: 1vmax;
     box-shadow: 1px 1px 3px black;
     border-bottom-right-radius: 4px;
 }
 .user-info {
-    color: #ecf0f1;
+    color: #00FF91;
     display: inline-block;
     vertical-align: middle;
 }
@@ -61,12 +61,12 @@ body{
     grid-template-columns: minmax(200px, 70vw);
     align-self: start;
 }
-.friends{
+.friends-container{
     grid-row: 3;
     grid-column: 3;
-    background-color: #3498db;
+    background-color: #41003C;
     font-size: 1.5vmax;
-    color: #ecf0f1;
+    color: #00FF91;
     border-top-left-radius: 4px;
     box-shadow: -1px -1px 3px black;
     padding-left: 1vmax;
